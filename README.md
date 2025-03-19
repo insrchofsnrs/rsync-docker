@@ -1,5 +1,7 @@
 # Docker Rsync
 
+Dockerhub page: https://hub.docker.com/r/insrch/rsync
+
 ## Overview
 
 Initially, I was looking for a ready-made solution but couldn't find one that met my needs, especially with support for ARM and a simple setup. So, I decided to create my own Docker image and share it for others who are also looking for an easy-to-use solution.
@@ -63,7 +65,7 @@ docker run -d \
   -e REMOTE_PATH=/home/ubuntu/downloads \
   -e SSH_KEY_FILE=id_rsa \
   -e CRON_SCHEDULE="0 2 * * *" \
-  insrch/rsync
+  insrch/rsync:latest
 ```
 
 This configuration syncs files from the remote directory every day at 2 AM.
@@ -72,8 +74,8 @@ This configuration syncs files from the remote directory every day at 2 AM.
 
 ```yaml
 services:
-  rsync-sync:
-    image: your-image-name
+  rsync:
+    image: insrch/rsync:latest
     container_name: rsync
     restart: unless-stopped
     volumes:
