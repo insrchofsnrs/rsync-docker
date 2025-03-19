@@ -36,7 +36,7 @@ docker run -d \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
   --restart unless-stopped \
-  insrch/rsync
+  insrch/rsync:latest
 ```
 
 ## Environment Variables
