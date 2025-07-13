@@ -1,0 +1,30 @@
+# Logs
+*.log
+logs/
+
+# Build directories
+dist/
+build/
+
+# Docker
+*.env
+docker-compose.override.yml
+.dockerignore
+docker-compose.yaml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmpGEMINI.md
