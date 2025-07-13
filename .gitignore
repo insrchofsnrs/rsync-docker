@@ -27,4 +27,7 @@ Thumbs.db
 *.swo
 *.swn
 *.bak
-*.tmpGEMINI.md
+*.tmp
+
+# Gemini
+GEMINI.md
